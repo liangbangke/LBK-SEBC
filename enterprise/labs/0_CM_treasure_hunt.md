@@ -1,15 +1,15 @@
 
 #1. What is ubertask optimization? <br>
 mapreduce_job_ubertask_enabled:Whether to enable ubertask optimization, which runs "sufficiently small" jobs sequentially within a single JVM. "Small" is defined by the mapreduce.job.ubertask.maxmaps, mapreduce.job.ubertask.maxreduces, and mapreduce.job.ubertask.maxbytes settings.<br>
-2. Where in CM is the Kerberos Security Realm value displayed?<br>
+#2. Where in CM is the Kerberos Security Realm value displayed?<br>
 setting: Kerberos Security Realm default_realm HADOOP.COM
 The realm to use for Kerberos security. Note: Changing this setting would clear up all existing credentials and keytabs from Cloudera Manager.<br>
-3. Which CDH service(s) host a property for enabling Kerberos authentication?<br>
+#3. Which CDH service(s) host a property for enabling Kerberos authentication?<br>
 	a.hadoop_secure_web_ui yarn :Enables Kerberos authentication for Hadoop HTTP web consoles for all roles of this service using the SPNEGO protocol. Note: This is effective only if Kerberos is enabled for the HDFS service<br>
 	b.enableSecurity:	Enable Kerberos authentication for ZooKeeper.<br>
 	c.Enable Kerberos Authentication for HDFS HTTP Web-Consoles：	 Enables Kerberos authentication for Hadoop HTTP web consoles for all roles of this service using the SPNEGO protocol. Note: This is effective only if Kerberos is enabled for the HDFS service.<br>
 <br>
-4. How do you upgrade the CM agents?<br>
+#4. How do you upgrade the CM agents?<br>
 	1.Log in to the Cloudera Manager Admin Console.<br>
 	2.Upgrade hosts using one of the following methods:<br>
 	  a.Select Yes, I would like to upgrade the Cloudera Manager Agent packages now and click Continue.<br>
@@ -35,13 +35,13 @@ The realm to use for Kerberos security. Note: Changing this setting would clear 
 	8.Click Continue. If you kept the default selection, the Upgrade wizard restarts the Cloudera Management Service.<br>
 	9.Click Finish. The Home > Status tab displays.<br>
 	<br>
-5. Give the tsquery statement used to chart Hue CPU utilization?<br>
+#5. Give the tsquery statement used to chart Hue CPU utilization?<br>
 	select cpu_system_rate + cpu_user_rate where category=ROLE and serviceName="hue"<br>
-6. List all the roles that make up the Hive service.<br>
+#6. List all the roles that make up the Hive service.<br>
    a.Hive metatstore Server<br>
    c. HiveServer2<br>
 <br>
-7.List the prerequisite steps necessary to integrating Cloudera Manager with a Kerberos MIT KDC.<br>
+#7.List the prerequisite steps necessary to integrating Cloudera Manager with a Kerberos MIT KDC.<br>
 <br>
 		if the type is Local MIT KDC:<br>
 		<br>
