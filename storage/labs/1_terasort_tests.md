@@ -1,4 +1,4 @@
-#As user ernie, use teragen to generate 51,200,000 records：<br>
+#HDFS Lab: Test HDFS performance<br>
 [hdfs@NameNode01 hadoop-0.20-mapreduce]$ time hadoop jar hadoop-examples.jar teragen -Ddfs.block.size=16777216 50000000 /user/ernie/tgen
 16/05/19 09:40:05 INFO client.RMProxy: Connecting to ResourceManager at NameNode01/192.168.60.80:8032<br>
 16/05/19 09:40:06 INFO terasort.TeraSort: Generating 50000000 using 2<br>
