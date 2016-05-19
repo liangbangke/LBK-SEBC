@@ -1,0 +1,9 @@
+upload image failed<br>
+#<br>
+[root@namenode1 run]# cat /etc/yum.repos.d/cloudera-manager.repo<br>
+[cloudera-manager]<br>
+name = Cloudera Manager, Version 5.6.0<br>
+baseurl = http://192.168.60.80/cm/<br>
+gpgkey = http://192.168.60.80/cm/RPM-GPG-KEY-cloudera<br>
+gpgcheck = 1<br>
+<br>
