@@ -6,7 +6,8 @@ setting: Kerberos Security Realm default_realm HADOOP.COM
 The realm to use for Kerberos security. Note: Changing this setting would clear up all existing credentials and keytabs from Cloudera Manager.<br>
 #3. Which CDH service(s) host a property for enabling Kerberos authentication?<br>
 	a.hadoop_secure_web_ui yarn :Enables Kerberos authentication for Hadoop HTTP web consoles for all roles of this service using the SPNEGO protocol. Note: This is effective only if Kerberos is enabled for the HDFS service<br>
-	b.enableSecurity:	Enable Kerberos authentication for ZooKeeper.<br>
+	b.enableSecurity:<br>
+	Enable Kerberos authentication for ZooKeeper.<br>
 	c.Enable Kerberos Authentication for HDFS HTTP Web-Consoles：	 Enables Kerberos authentication for Hadoop HTTP web consoles for all roles of this service using the SPNEGO protocol. Note: This is effective only if Kerberos is enabled for the HDFS service.<br>
 <br>
 #4. How do you upgrade the CM agents?<br>
