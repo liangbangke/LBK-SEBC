@@ -1,1 +1,5 @@
 
+[root@namenode1 ~]# cat /var/kerberos/krb5kdc/kadm5.acl <br>
+*/admin@EXAMPLE.COM     * <br>
+cloudera-scm@PUNEETHA.COM admilc <br>
+ <br>
