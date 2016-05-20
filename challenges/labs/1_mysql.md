@@ -13,6 +13,7 @@ repolist: 8,507 <br>
 
 [root@dbserver yum.repos.d]# mysql --version <br>
 mysql  Ver 14.14 Distrib 5.6.30, for Linux (x86_64) using  EditLine wrapper <br>
+
 [root@dbserver yum.repos.d]# mysql -u root -p <br>
 Enter password:       <br>
 mysql> show databases; <br>
