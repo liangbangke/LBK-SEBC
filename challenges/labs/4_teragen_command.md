@@ -1,5 +1,3 @@
- <br>
-[hdfs@namenode1 root]$ cd /opt/cloudera/parcels/CDH-5.6.0-1.cdh5.6.0.p0.45/lib/hadoop-0.20-mapreduce/ <br>
 [hdfs@namenode1 hadoop-0.20-mapreduce]$ time hadoop jar hadoop-examples.jar teragen -Ddfs.block.size=33554432 51200000 /user/jetli/tgen32 <br>
 16/05/20 09:54:23 INFO client.RMProxy: Connecting to ResourceManager at namenode1.hadoop.com/192.168.60.80:8032 <br>
 16/05/20 09:54:24 INFO terasort.TeraSort: Generating 51200000 using 2 <br>
@@ -83,3 +81,5 @@ Found 3 items <br>
 -rw-r--r--   3 hdfs supergroup 2560000000 2016-05-20 09:55 /user/jetli/tgen32/part-m-00001 <br>
 [hdfs@namenode1 hadoop-0.20-mapreduce]$ <br>
  <br>
+
+#154 blocks were created to store this file
