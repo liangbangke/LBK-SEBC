@@ -1,4 +1,4 @@
-[hdfs@namenode1 hadoop-0.20-mapreduce]$ time hadoop jar hadoop-examples.jar teragen -Ddfs.block.size=33554432 51200000 /user/jetli/tgen32 <br>
+###[hdfs@namenode1 hadoop-0.20-mapreduce]$ time hadoop jar hadoop-examples.jar teragen -Ddfs.block.size=33554432 51200000 /user/jetli/tgen32 <br>
 16/05/20 09:54:23 INFO client.RMProxy: Connecting to ResourceManager at namenode1.hadoop.com/192.168.60.80:8032 <br>
 16/05/20 09:54:24 INFO terasort.TeraSort: Generating 51200000 using 2 <br>
 16/05/20 09:54:24 INFO mapreduce.JobSubmitter: number of splits:2 <br>
@@ -72,9 +72,8 @@
 real    1m28.743s <br>
 user    0m7.960s <br>
 sys     0m0.711s <br>
-[hdfs@namenode1 hadoop-0.20-mapreduce]$ <br>
- <br>
-[hdfs@namenode1 hadoop-0.20-mapreduce]$ hdfs dfs -ls /user/jetli/tgen32 <br>
+
+###[hdfs@namenode1 hadoop-0.20-mapreduce]$ hdfs dfs -ls /user/jetli/tgen32 <br>
 Found 3 items <br>
 -rw-r--r--   3 hdfs supergroup          0 2016-05-20 09:55 /user/jetli/tgen32/_SUCCESS <br>
 -rw-r--r--   3 hdfs supergroup 2560000000 2016-05-20 09:55 /user/jetli/tgen32/part-m-00000 <br>
@@ -82,4 +81,4 @@ Found 3 items <br>
 [hdfs@namenode1 hadoop-0.20-mapreduce]$ <br>
  <br>
 
-#154 blocks were created to store this file
+###154 blocks were created to store this file
